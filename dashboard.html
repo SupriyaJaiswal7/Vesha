@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dashboard - Vesha</title>
+
+  <link rel="icon" href="{{ url_for('static', filename='images/vesha-icon.ico') }}" type="image/x-icon" />
+  <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="{{ url_for('static', filename='quiz-dashboard.css') }}" />
+</head>
+<body>
+  <nav class="navbar">
+    <div class="sidebar-icon" aria-label="Sidebar Menu">&#9776;</div>
+    <div class="brand-name">
+      <img class="brand-name-logo" src="{{ url_for('static', filename='images/vesha-logo1.png') }}" alt="Vesha Logo" style="height: 30px; vertical-align: middle;">
+      <p id="brand-name" style="display: inline; margin-left: 8px;">Vesha</p>
+    </div>
+    <div class="nav-links">
+      <a href="{{ url_for('home.html') }}">Home</a>
+      <a href="{{ url_for('quiz.html') }}">Style Quiz</a>
+      <a href="{{ url_for('dashboard.html') }}">Dashboard</a>
+    </div>
+  </nav>
+
+  <div class="page-content">
+    <h1>Your Style Dashboard</h1>
+    <p>Welcome to your personalized fashion space. More features like AI suggestions, outfit tracking, and your digital closet are coming soon!</p>
+    <p><em>Thanks for using Vesha – Dream. Dress. Become.</em></p>
+  </div>
+</body>
+</html>

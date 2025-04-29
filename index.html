@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Vesha - Dream. Dress. Become.</title>
+
+  <link rel="icon" href="{{ url_for('static', filename='images/vesha-icon.ico') }}" type="image/x-icon" />
+  <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}" />
+</head>
+<body>
+  <nav class="navbar">
+    <div class="sidebar-icon" aria-label="Sidebar Menu">&#9776;</div>
+
+    <div class="brand-name">
+      <img class="brand-name-logo" src="{{ url_for('static', filename='images/vesha-logo1.png') }}" alt="Vesha Logo">
+      <p id="brand-name">Vesha</p>
+    </div>
+
+    <div class="nav-links">
+      <a href="{{ url_for('index.html') }}">Home</a>
+      <a href="{{ url_for('quiz.html') }}">Style Quiz</a>
+      <a href="{{ url_for('dashboard.html') }}">Dashboard</a>
+    </div>
+  </nav>
+
+  <div class="home-content">
+    <img class="Logo" src="{{ url_for('static', filename='images/vesha-logo.png') }}" alt="Logo Vesha" />
+    <h1>Welcome to Vesha</h1>
+    <p>Wear Your Vision</p>
+    <a href="{{ url_for('quiz.html') }}">
+      <button>Start Your Style Journey</button>
+    </a>
+  </div>
+</body>
+</html>
+             

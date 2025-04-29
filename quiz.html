@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Style Quiz - Vesha</title>
+
+  <link rel="icon" href="{{ url_for('static', filename='images/vesha-icon.ico') }}" type="image/x-icon" />
+  <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="{{ url_for('static', filename='quiz-dashboard.css') }}" />
+</head>
+<body>
+  <nav class="navbar">
+    <div class="sidebar-icon" aria-label="Sidebar Menu">&#9776;</div>
+    <div class="brand-name">
+      <img class="brand-name-logo" src="{{ url_for('static', filename='images/vesha-logo1.png') }}" alt="Vesha Logo" style="height: 30px; vertical-align: middle;">
+      <p id="brand-name" style="display: inline; margin-left: 8px;">Vesha</p>
+    </div>
+    <div class="nav-links">
+      <a href="{{ url_for('index.html') }}">Home</a>
+      <a href="{{ url_for('quiz.html') }}">Style Quiz</a>
+      <a href="{{ url_for('dashboard.html') }}">Dashboard</a>
+    </div>
+  </nav>
+
+  <div class="page-content">
+    <h1>Style Quiz</h1>
+    <form action="{{ url_for('dashboard.html') }}" method="GET">
+      <p>1. Select your gender:</p>
+      <label><input type="radio" name="gender" value="male" required> Male</label><br>
+      <label><input type="radio" name="gender" value="female"> Female</label><br>
+      <label><input type="radio" name="gender" value="other"> Other</label><br><br>
+
+      <p>2. Select your age group:</p>
+      <select name="age" required>
+        <option value="">Choose one</option>
+        <option value="teen">13–19</option>
+        <option value="adult">20–35</option>
+        <option value="mature">36+</option>
+      </select><br><br>
+
+      <p>3. Choose your body type:</p>
+      <label><input type="radio" name="body" value="slim" required> Slim</label><br>
+      <label><input type="radio" name="body" value="average"> Average</label><br>
+      <label><input type="radio" name="body" value="curvy"> Curvy</label><br><br>
+
+      <p>4. Preferred regional style:</p>
+      <select name="style" required>
+        <option value="">Select one</option>
+        <option value="north">North Indian</option>
+        <option value="south">South Indian</option>
+        <option value="fusion">Fusion</option>
+      </select><br><br>
+
+      <button type="submit">See My Style Dashboard</button>
+    </form>
+  </div>
+</body>
+</html>
