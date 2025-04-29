@@ -67,7 +67,7 @@ This project is licensed under the **MIT License** — feel free to use and adap
 
 ---
 
-## ❤️ A Note from the Creator
+❤️ A Note from the Creators
 
-Hi, I'm Supriya Jaiswal. Vesha is a passion project to change how people discover and express their style.  
-The journey is just beginning, and I'm excited to see where it goes!
+Hi, we're Supriya and Priyanshu. Vesha is a passion project built with the goal of making personal fashion discovery fun and meaningful.
+We're excited to take this forward and share it with the world — thank you for visiting!
